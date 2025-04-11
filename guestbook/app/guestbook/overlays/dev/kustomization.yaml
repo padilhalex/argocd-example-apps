@@ -2,4 +2,10 @@ resources:
   - ../../base
 
 patches:
-  - path: patch-deployment.yaml
+  - target:
+      kind: Deployment
+      name: guestbook-ui
+  - path: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: gcr.io/heptio-images/ks-guestbook-demo:0.1

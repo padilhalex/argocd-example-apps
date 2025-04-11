@@ -2,4 +2,10 @@ resources:
   - ../../base
 
 patches:
-  - patch: patch-deployment.yaml
+  - target:
+      kind: Deployment
+      name: guestbook-ui
+  - path: |-
+      - op: replace
+        path: /metadata/namespace
+        value: hml
