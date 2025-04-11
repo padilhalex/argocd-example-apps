@@ -1,5 +1,5 @@
 resources:
   - ../../base
 
-patchesStrategicMerge:
-  - patch-deployment.yaml
+patches:
+  - path: patch-deployment.yaml
