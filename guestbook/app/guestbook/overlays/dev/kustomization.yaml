@@ -2,4 +2,4 @@ resources:
   - ../../base
 
 patches:
-  - patch: patch-deployment.yaml
+  - path: patch-deployment.yaml
