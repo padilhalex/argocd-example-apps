@@ -1,9 +1,2 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  namespace: dev
-spec:
-  replicas: 2
-    spec:
-      containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.1
+containers:
+  - image: gcr.io/heptio-images/ks-guestbook-demo:0.1
