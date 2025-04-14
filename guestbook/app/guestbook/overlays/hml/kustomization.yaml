@@ -5,7 +5,7 @@ patches:
   - target:
       kind: Deployment
       name: guestbook-ui
-  - path: |-
+    patch: |-
       - op: replace
         path: /metadata/namespace
         value: hml
